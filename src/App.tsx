@@ -9,7 +9,7 @@ import { useCounter } from "./hooks/counter"
 
 export const App = () =>{ 
   const {count, increment, decrement, reset} = useCounter()
-  const bg = useColorModeValue("gray.100", "gray.900")
+  const bg = useColorModeValue("white.900","gray.100")
   
   return(
   <ChakraProvider theme={theme}>
@@ -21,7 +21,7 @@ export const App = () =>{
         p={6} 
         borderRadius={6}
         borderColor="gray.200" 
-        background="bg" 
+        background={bg} 
         borderWidth="1px" 
         maxWidth="2xl">
           <VStack spacing={6}>
